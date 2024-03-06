@@ -1,0 +1,180 @@
+/* Pagination */
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: #333; /* Dark grey for readability */
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.info-label {
+    display: inline-block;
+    width: 150px; /* Adjust the width according to your preference */
+    text-align: left;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+
+.pagination a.active {
+    background-color: #f0c419; /* Vibrant yellow */
+    color: #333; /* Dark grey for contrast */
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd; /* Light grey on hover */
+}
+
+.pagination-container {
+    text-align: center;
+}
+
+/* Carousel */
+.carousel-indicators img {
+    width: 25px;
+    display: block;
+}
+
+.carousel-indicators button {
+    width: max-content !important;
+}
+
+.carousel-indicators {
+    position: unset;
+}
+
+.carousel-inner .item img {
+    width: 75%; /* or width: 100% !important; */
+}
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="box-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+body, h1, h2, p, li, pre {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #797ef6; /* Dark grey for header */
+    color: #ffffff;
+    padding: 15px;
+}
+
+/* Menu */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #f0c419; /* Vibrant yellow for menu items */
+    color: #333; /* Dark grey for contrast */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+    background-color: #797ef6; /* Dark grey on hover */
+}
+
+/* Aside */
+.aside {
+    padding: 15px;
+    color: #333; /* Dark grey for content */
+    text-align: left;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* Footer */
+.footer {
+    bottom: 0;
+    left: 0;
+    background-color: #797ef6; /* Dark grey for footer */
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Responsive Design */
+[class*="box-"] {
+    float: left;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .box-1a {
+        width: 25%;
+    }
+
+    .box-2a {
+        width: 50%;
+    }
+
+    .box-3a {
+        width: 75%;
+    }
+
+    .box-4a {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .box-1b {
+        width: 25%;
+    }
+
+    .box-2b {
+        width: 50%;
+    }
+
+    .box-3b {
+        width: 75%;
+    }
+
+    .box-4b {
+        width: 100%;
+    }
+}

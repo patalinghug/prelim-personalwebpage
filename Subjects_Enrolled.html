@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Kris Michaela J. Patalinghug</h1>
+    </div>
+
+    <div class="row">
+        <div class="box-1a box-1b menu">
+            <ul>
+                <a href="About ME.html" style="text-decoration: none">
+                    <li>About ME</li>
+                </a>
+                <a href="Subjects Taken - 1st Year 1st Sem.html" style="text-decoration: none">
+                    <li>Subjects Taken</li>
+                </a>
+                <a href="Subjects Enrolled.html" style="text-decoration: none">
+                    <li>Subjects Currently Enrolled</li>
+                </a>
+                <a href="Contact ME.html" style="text-decoration: none">
+                    <li>Contact Me</li>
+                </a>
+                <a href="Favourites.html" style="text-decoration: none">
+                    <li>My Favorites</li>
+                </a>
+                <a href="Gallery.html" style="text-decoration: none">
+                    <li>Gallery</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="box-2a box-2b">
+            <h1>Subject Currently Enrolled</h1>
+            <table>
+                <tr>
+                    <td colspan="10">SCHEDULE</td>
+                    <td colspan="10">SUBJECT</td>
+                    <td colspan="10">DESCRIPTION</td>
+                    <td colspan="10">UNITS</td>
+                </tr>
+                <tr>
+                   <td colspan="10">MW<br>01300230P<br>11101240N</td>
+                    <td colspan="10">CSIT 5</td>
+                    <td colspan="10">INFORMATION MANAGEMENT</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                   <td colspan="10">MW<br>10051105A<br>08000930A</td>
+                    <td colspan="10">ITP 4</td>
+                    <td colspan="10">INTEGRATIVE PROGRAMMING & TECHNOLOGIES 1</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">TTH<br>09351035A<br>08000930A</td>
+                    <td colspan="10">ITP 5</td>
+                    <td colspan="10">NETWORKING 2 (CISCO 2: ROUTING PROTOCOLS & CONCEPTS)</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">TTH<br>03050405P<br>01000230P</td>
+                    <td colspan="10">ITP 6</td>
+                    <td colspan="10">INTRODUCTION TO HUMAN COMPUTER INTERACTION</td>
+                    <td colspan="10">3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">F<br>06000800A</td>
+                    <td colspan="10">PE 4</td>
+                    <td colspan="10">PATH FIT 4: SPORTS (TEAM)</td>
+                    <td colspan="10">2</td>
+                </tr>
+                <tr>
+                    <td colspan="10">F<br>08001100A</td>
+                    <td colspan="10">PHILO 1</td>
+                    <td colspan="10">ETHICS / ETIKA</td>
+                    <td colspan="10">3</td>
+                </tr>
+              
+            </table>
+<script>
+                var unitCells = document.querySelectorAll('td:nth-child(3n)');
+
+                
+                var totalUnits = 0;
+
+               
+                unitCells.forEach(function(cell) {
+                    totalUnits += parseInt(cell.textContent);
+                });
+
+                
+                var totalRow = document.createElement('tr');
+                totalRow.innerHTML = `
+                    <td colspan="30" style="text-align: right; font-weight: bold;">Credited Total Units:</td>
+                    <td colspan="40" style="font-weight: bold;">${15}</td>
+                `;
+
+               
+                document.querySelector('table').appendChild(totalRow);
+            </script>   
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p style="font-weight: bold;">© 2023 - 2024 ITP4 | All Right Reserved</p>
+    </div>
+
+</body>
+
+</html>
